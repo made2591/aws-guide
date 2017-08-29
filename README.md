@@ -8,4 +8,4 @@ This repo is intended as a collection of reference note to AWS service.
 - [kindle-format aws guide](https://www.amazon.com/Amazon-Web-Services/e/B007R6MVQ6)
 
 #### Big picture
-![Big picture](./images/aws_1.0_big_picture.pdf)
+![Big picture](./images/aws_1.0_big_picture.png)
