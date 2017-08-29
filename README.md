@@ -46,15 +46,25 @@ This set of services are related to compute and networking functions: the follow
 - __Amazon ELB__ or __Amazon Elastic Load Balancer__
 - __Amazon ECS__ or __Amazon Elastic Container Service__
 
-##### Amazon EC2
+#### Amazon EC2
 
 EC2 provides scalable computing capacity (amazon servers in amazon datacenters) to build and host your app. EC2 works with __Amazon Machine Image__ or __AMI__: an "AMI" is an image template with software configuration inside like OS, webserver, specific applications, and so on. You create _instance(s)_ starting from _AMI_: in this sense, _AMI_ stays to [docker](https://docker.com) image as _instance_ stays to docker container. An _instance_ is no more than a copy of _AMI_ running as a VM in Amazon Datacenter. When you decide to create you instance, you can choose what type of host computer (in term of physical resources) you need: CPU, memory, etc.
 Each Amazon _instance_ has its own public __IP address__ and public __DNS name__: the last follows the rules above:
-- For _instances_ running in _Availability Zones_ in US East (N. Virginia) Region, the DNS name has the following pattern: ```ec2-[public_ip].compute-1.amazonaws.com```
+- For _instances_ running in _Availability Zones_ in US East (N. Virginia) Region, the DNS name has the following pattern:
+```ec2-[public_ip].compute-1.amazonaws.com```
 - For all other _instances_, DNS name has the following pattern:
 ```ec2-[public_ip].[public_ip].compute.amazonaws.com```
 
 You can ignore how instances work: they simply keep running until fail. They don't restart automatically if fails occurs. To better meet your / your customers' requirements, you can buildi your own _AMI_ image starting from the repo of _AMI_ and choosing the one that best fits your needs. Than, you can customize it adding more resources / applications in it.
+
+TODO: add schema and screenshots of instances setup
+
+#### Amazon VPC
+
+Amazon _Virtual Private Cloud_ is a virtual network dedicated to your AWS account. It is logically isolated from other virtual network. You can use _subnets_ to split IP(s) range and group (run) _istances_ to handle security and computational needs.
+Note: VPC is isolated from outside world by default. If you want a subnet to reach _www_, you need to add an __Internet Gateway__ AND a __route table__ to the Internet and the subnet. Starting from the end of 2013, a default VPC is created with your account. That means that every EC2 instances run in a VPC (default or non-default).
+
+TODO: add schema and screenshots of VPC setup
 
 ### Storage and Content Delivery Services
 todo yet
