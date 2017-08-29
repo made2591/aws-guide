@@ -1,16 +1,33 @@
-## My Personal AWS Guide
+# My Personal AWS Guide
 
-This repo is intended as a collection of reference notes and summaries of AWS services. I used [draw.io](https://draw.io) as open source web-based map tool and official Amazon guides.
+This repo is intended as a collection of reference notes and summaries of AWS services. I used [draw.io](https://draw.io) and [dillinger.io](https://dillinger.io) as open source web-based map tool and official Amazon guides.
 
-### Contents
-todo yet
+## Contents
 
-### Credits & Sources
+[[1] Credits & Sources](#creditsandsources)
+
+[[2] Products](#products)
+
+[[2.1] Compute and Networking Services](#cns)
+
+[[2.2] Storage and Content Delivery Services](#scds)
+
+[[2.3] Security and Identity Services](#sis)
+
+[[2.4] Database Services](#ds)
+
+[[2.5] Analytics Services](#as)
+
+[[2.6] Application Services](#aps)
+
+[[2.7] Management Tools](#mt)
+
+### <a name="creditsandsources"></a>Credits & Sources
 
 - [amazon.com](https://amazon.com)
 - [kindle-format aws guide](https://www.amazon.com/Amazon-Web-Services/e/B007R6MVQ6)
 
-#### Big picture
+## Big picture
 
 This is a big picture of AWS:
 
@@ -18,7 +35,7 @@ This is a big picture of AWS:
 
 AWS provides services in different parts of the world: for this reason, _AWS products_ are available in different _Regions_. Each region contains multiple distinct _Availability Zones_. Each Region is isolated from failures in others. Each Availability Zone is isolated from failures in others. You can use region and availability zone to meet legal requirements, provide services closer to specific customers and so on. Note: not every Region / Availability Zone supports every _AWS resource_. Prices in each Regione are different.
 
-### Products
+## <a name="products"></a>Products
 
 The main products in AWS environment are:
 
@@ -36,7 +53,7 @@ This is a picture with listed AWS products and key services:
 
 With the help of starting guide provided by Amazon, we go more in deep analyzing key services for each group of products. 
 
-### Compute and Networking Services
+### <a name="cns"></a>Compute and Networking Services
 
 This set of services are related to compute and networking functions: the following key services are available:
 - __Amazon EC2__ or __Amazon Elastic Compute Cloud__
@@ -70,20 +87,20 @@ Note: VPC is isolated from outside world by default. If you want a subnet to rea
 
 TODO: add schema and screenshots of VPC setup
 
-### Storage and Content Delivery Services
+### <a name="scds"></a>Storage and Content Delivery Services
 todo yet
 
-### Security and Identity Services
+### <a name="sis"></a>Security and Identity Services
 todo yet
 
-### Database Services
+### <a name="ds"></a>Database Services
 todo yet
 
-### Analytics Services
+### <a name="as"></a>Analytics Services
 todo yet
 
-### Application Services
+### <a name="aps"></a>Application Services
 todo yet
 
-### Management Tools
+### <a name="mt"></a>Management Tools
 todo yet
