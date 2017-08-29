@@ -1,6 +1,6 @@
-## A draw.io-maps based guide
+## My Personal AWS Guide
 
-This repo is intended as a collection of reference note to AWS service.
+This repo is intended as a collection of reference notes and summaries of AWS services. I used [draw.io](https://draw.io) as open source web-based map tool and official Amazon guides.
 
 ### Contents
 todo yet
