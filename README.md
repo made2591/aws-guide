@@ -67,7 +67,9 @@ This set of services are related to compute and networking functions: the follow
 
 EC2 provides scalable computing capacity (amazon servers in amazon datacenters) to build and host your app. EC2 works with __Amazon Machine Image__ or __AMI__: an "AMI" is an image template with software configuration inside like OS, webserver, specific applications, and so on. You create _instance(s)_ starting from _AMI_: in this sense, _AMI_ stays to [docker](https://docker.com) image as _instance_ stays to docker container. An _instance_ is no more than a copy of _AMI_ running as a VM in Amazon Datacenter. When you decide to create you instance, you can choose what type of host computer (in term of physical resources) you need: CPU, memory, etc.
 
-![AMIExample](./images/aws_1.0_ami_example.png) { width: 200px }
+<p>
+	<img src="./images/aws_1.0_ami_example.png" width="50%"/>
+</p>
 
 Each Amazon _instance_ has its own public __IP address__ and public __DNS name__: the last follows the rules above:
 - For _instances_ running in _Availability Zones_ in US East (N. Virginia) Region, the DNS name has the following pattern:
